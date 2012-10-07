@@ -36,6 +36,7 @@ p {
 	font-size:12px;
 	font-family: Helvetica, Arial, Tahoma, sans-serif;
 	line-height:22px;
+   margin-bottom: 10px;
 }
 dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset, blockquote, article, p {
 	
@@ -45,7 +46,7 @@ dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset, blockquot
    padding-right: 20px;
 }
 .alignright{
-   float: left;
+   float: right;
    padding-right: 20px;
 }
 /* ================= Headers ================= */
@@ -134,7 +135,7 @@ ol, ol li {
 	list-style:decimal outside;
 }
 /* ================= Dividers ================= */
-.padding5, .padding10, .padding15, .padding25, .padding30, .padding40, .padding100 {
+.padding5, .padding10, .padding15, .padding25, .padding30, .padding40, .padding60, .padding100 {
    font-size:0;
 	line-height:0;
 }
@@ -155,6 +156,9 @@ ol, ol li {
 }
 .padding40 {
 	padding-top:40px;
+}
+.padding60 {
+	padding-top:60px;
 }
 .padding100 {
 	padding-top:100px;

@@ -44,6 +44,7 @@ description: Gallery for photographer Rod Simpson
    function showGalleries() {
       $('#gallery_detail').hide();
       $('#gallery_list').show();
+      $('#artist_statement').show();
    }
 
    // handler to show a specific gallery
@@ -53,6 +54,7 @@ description: Gallery for photographer Rod Simpson
       $('#gallery_description').html(description);
       //hide gallery list
       $('#gallery_list').hide();
+      $('#artist_statement').hide();
       //empty out the container
       $("#gallery").empty();
       //and fill it with our gallery data
@@ -104,15 +106,18 @@ description: Gallery for photographer Rod Simpson
             numImagesToPreload: 4,
             autoScaleSlider: true,
             autoScaleSliderWidth: 940,
-            autoScaleSliderHeight: 710
+            autoScaleSliderHeight: 710,
+            transitionSpeed: 1000,
+            transitionType: 'fade'
          });
     }
 </script>
 
 <!-- Content -->
 <section class="container clearfix">
-   <div class="clear padding25"></div>
-   <div class="alignright"><a href="">Artist's Statement</a></div>
+   <div class="clear padding15"></div>
+   <div class="alignright" id="artist_statement"><a href="/pages/artist/statement.html">Artist's Statement</a></div>
+   <div class="clear padding15 clearfix"></div>
    <div class="gallery_listing">
 
    </div>
