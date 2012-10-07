@@ -1,0 +1,20 @@
+---
+layout: default
+title: Rod Simpson - Blog Categories
+keywords: Rod Simpson, Categories
+description: Blog Category
+---
+
+<section class="container clearfix">
+   <div class="content clearfix">
+      <h1>Posts in blog category "<a href="/tags/{{ page.category }}">{{ page.category }}</a>"</h1>
+      {% assign posts = site.categories[page.category] %}
+      {% assign no_category = true %}
+      {% include post-listing.html %}
+      <div class="clear"></div>
+   </div>
+
+   <div class="sidebar">
+      {% include sidebar.html %}
+   </div>
+</section>

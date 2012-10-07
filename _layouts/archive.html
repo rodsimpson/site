@@ -1,0 +1,19 @@
+---
+layout: default
+title: Rod Simpson - Archive
+keywords: Rod Simpson, Archive
+description: Blog Archive
+---
+
+<section class="container clearfix">
+   <div class="content clearfix">
+      <h1>Archive</h1>
+      {% assign posts = page.posts %}
+      {% include post-listing.html %}
+      <div class="clear"></div>
+   </div>
+
+   <div class="sidebar">
+      {% include sidebar.html %}
+   </div>
+</section>

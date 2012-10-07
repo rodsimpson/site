@@ -1,0 +1,39 @@
+<div class="widget">
+   <h2><a class="blog_sidebar_header" href="/categories">Categories</a></h2>
+   <div class="sidebar_items">
+      <ul>
+         {{ site.cats | browse_list }}
+      </ul>      
+   </div>
+</div>
+<div class="clear padding40"></div>
+<div class="widget">
+   <h2><a class="blog_sidebar_header" href="/archives.html">Archives</a></h2>
+   <div class="sidebar_items">
+      <ul>
+       {% monthly_archives %}
+      </ul>
+   </div>
+</div>
+
+<div class="clear padding40"></div>
+<div class="widget">
+   <h2 class="sidebar_header">Recent Posts</h2>
+   <div class="sidebar_items">
+      <ul style="list-style-type: square; margin-left: 10px;">
+         {% for post in site.posts limit:4 %}
+         <li>
+            <a href="{{ post.url }}" rel="bookmark" title="Permanent link to ">{{ post.title }}</a>
+         </li>
+         {% endfor %}
+      </ul>
+   </div>
+</div>
+
+<div class="clear padding40"></div>
+<div class="widget">
+   <h2><a class="blog_sidebar_header" href="/tags">Tags</a></h2>
+   <div class="sidebar_items">
+      {% tag_cloud %}
+   </div>
+</div>

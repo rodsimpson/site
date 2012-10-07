@@ -1,0 +1,38 @@
+---
+layout: default
+title: Rod Simpson - Categories
+keywords: Rod Simpson, Categories
+description: Blog Categories
+---
+
+<section class="container clearfix">
+   <div class="content clearfix">
+      <h1>Blog categories</h1>
+      {% for category in page.categories %}
+         {% if category != 'blog' %}
+            <h2><a class="blog_sidebar_header" href="/categories/{{ category | slugize }}">{{ category }}</a></h2>
+            <h6 class='quiet'>{{ site.categories[category] | length }} posts</h6>
+
+            <h4>Latest</h4>
+            {% for post in site.categories[category] limit: 3 %}
+            <div class="post-listing">
+               <div class="inner">
+                  <span class="title">
+                  <span class="date">{{ post.date | date: "%Y-%m-%d" }}</span>
+                  {% if post.url %}<a href="{{post.url}}">{% endif %}
+                     {{ post.title }}
+                  {% if post.url %}</a>{% endif %}
+                  </span>
+               </div>
+            </div>
+            {% endfor %}
+         {% endif %}
+         <div class="clear padding30"></div>
+      {% endfor %}
+      <div class="clear"></div>
+   </div>
+
+   <div class="sidebar">
+      {% include sidebar.html %}
+   </div>
+</section>

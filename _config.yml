@@ -1,0 +1,14 @@
+auto: true
+server: true
+lsi: false
+markdown: rdiscount
+pygments: true
+permalink: /:year/:month/:day/:title
+pagination: true
+paginate: 3
+exclude: ["Rakefile", "LICENSE.txt", "CNAME"]
+name: Rod Simpson
+keywords: Rod Simpson, photographer, artist, writer, developer, php, javascript, camera
+description: Rod Simpson - Artist, Writer, Developer
+url: http://rodsimpson.com
+github_user: rodsimpson

@@ -1,0 +1,23 @@
+---
+layout: default
+title: Rod Simpson - Artist, Writer, Developer
+keywords: Rod Simpson, Developer, PHP, Javascript, Web, Apigee, Java, C++
+description: Resume and professional information for developer Rod Simpson
+category: blog
+category_layout: blog_index.html
+---
+
+<section class="container clearfix">
+   <div class="content clearfix">
+      {% assign posts = paginator.posts %}
+      {% include post-listing.html %}
+      <div class="clear"></div>
+      {% include paginator.html %}
+   </div>
+
+   <div class="sidebar">
+      {% include sidebar.html %}
+   </div>
+
+   <div class="clear padding40"></div>
+</section>

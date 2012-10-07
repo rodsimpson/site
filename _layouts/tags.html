@@ -1,0 +1,19 @@
+---
+layout: default
+title: Rod Simpson - Tags
+keywords: Rod Simpson, Tags
+description: Blog Tags
+---
+<section class="container clearfix">
+   <div class="content clearfix">
+      <h1>Blog tags</h1>
+      {% for tag in page.tags %}
+         <a href="/tags/{{ tag | slugize }}">{{ tag }}</a> ({{ site.tags[tag] | length }}) </br>
+      {% endfor %}
+      <div class="clear"></div>
+   </div>
+
+   <div class="sidebar">
+      {% include sidebar.html %}
+   </div>
+</section>

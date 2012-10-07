@@ -1,0 +1,8 @@
+
+To run Jekyll:
+
+// will rebuild all, no auto updating
+jekyll --no-auto
+
+//will rerun plugins, will auto update html/css changes, but must rerun to pull in *.rb changes
+jekyll --server

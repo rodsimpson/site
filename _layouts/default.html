@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+<title>{{ page.title }}</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+{% if page.description %}
+<meta name="description" content="{{page.description}}" />
+{% else %}
+<meta name="description" content="{{site.description}}" />
+{% endif %}
+{% if page.categories %}
+<meta name="keywords" content="{{page.categories | join: ','}}" />
+{% else %}
+<meta name="keywords" content="{{site.keywords | join: ','}}" />
+{% endif %}
+<meta name="robots" content="index,follow,noodp,noydir" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="stylesheet" href="/css/styles.css" type="text/css" />
+<link rel="stylesheet" href="/css/styles_old.css" type="text/css" />
+<link rel="alternate" type="application/atom+xml" href="/atom.xml" title="Rod Simpson's blog">
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script type="text/javascript" src="/js/html5.js"></script>
+<link rel="stylesheet" href="/css/ie.css" type="text/css" />
+<![endif]-->
+<script type="text/javascript" src="//use.typekit.net/mhm2zyq.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<script type="text/javascript" src="/js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="/js/jquery-ui-1.8.22.custom.min.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+<script type="text/javascript" src="/js/html5.js"></script>
+</head>
+<body>
+<!-- header -->
+<header class="header_bg clearfix">
+   <div class="container clearfix bottom_rule">
+      <div class="logo">
+         <div class="logo1">ROD</div>
+         <div class="logo2">SIMPSON</div>
+      </div>
+      <!-- /logo -->
+      <!-- nav -->
+      <nav class="main-menu">
+         <ul class="sf-menu">
+            <li><a href="/index.html">START</a></li>
+            <li><a href="/pages/artist/photography_gallery.html">PHOTOGRAPHY</a></li>
+            <li><a href="/pages/writer/writing.html">WRITING</a></li>
+            <li><a href="/pages/developer/resume.html">DEVELOPER</a></li>
+            <li><a href="/blog">BLOG</a></li>
+            <li><a href="/birding">BIRDING</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+            <li style="margin-right: 0px;"><a href="/atom.xml"><img src="/images/rss.png" class="rssfeed"></a></li>
+         </ul>
+      </nav>
+      <!-- /nav -->
+      <div class="clear padding5"></div>
+   </div>
+</header>
+<!-- /header -->
+	
+{{ content }}
+
+<!-- footer -->
+<div class="clear padding100"></div>
+<footer class="footer_bg_bottom" id="footer">
+   <div class="footer_bottom container">
+      <div class="columns_2">
+         <div class="menu">
+            <ul class="sf-menu">
+               <li><a href="/pages/artist/photography_gallery.html">Photography</a></li>
+               <li><a href="/pages/writer/writing.html">Writing</a></li>
+               <li><a href="/pages/developer/resume.html">Developer</a></li>
+               <li><a href="/blog">Blog</a></li>
+               <li><a href="/birding">Birding</a></li>
+               <li><a href="#contact">Contact</a></li>
+            </ul>
+         </div>
+      </div>
+      <div class="clear padding20"></div>
+      <div class="columns_2 last">
+         <p>
+            &copy; 2012 All Rights Reserved. &nbsp; <a href="copyright.html">Copyright Notice</a>
+         </p>
+      </div>
+      <div class="clear padding20"></div>
+   </div>
+</footer>
+<!-- /footer -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19276682-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

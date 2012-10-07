@@ -1,0 +1,33 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <link rel="hub" href="https://pubsubhubbub.appspot.com"/>
+ 
+  <title>rodsimpson.com</title>
+  <link href="http://rodsimpson.com/"/>
+  <link type="application/atom+xml" rel="self" href="http://rodsimpson.com/atom.xml"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>http://rodsimpson.com/</id>
+  <author>
+    <name>Rod Simpson</name>
+    <email>rod@rodsimpson.com</email>
+  </author>
+
+  {% for post in site.posts %}
+  <entry>
+    <id>http://rodsimpson.com{{ post.id }}</id>
+    <link type="text/html" rel="alternate" href="http://rodsimpson.com{{ post.url }}"/>
+    <title>{{ post.title | xml_escape }}</title>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <author>
+      <name>Rod Simpson</name>
+      <uri>http://rodsimpson.com/</uri>
+    </author>
+    <content type="html">{{ post.content | xml_escape }}</content>
+  </entry>
+  {% endfor %}
+
+</feed>

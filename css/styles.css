@@ -1,0 +1,925 @@
+/* ================= 1. CSS Reset ================= */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-family: "nimbus-sans-extended",Helvetica, Arial, Tahoma, sans-serif;
+}
+strong, b {
+	font-weight:bold;
+}
+em, dfn, i {
+	font-style:italic;
+}
+/* ================= General tags ================= */
+body {
+	font: 12px/1.7 Helvetica, Arial, Tahoma, sans-serif;
+	color:#222;
+	-webkit-font-smoothing: antialiased;
+	backgorund:#f6f4e7;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight:400;
+}
+a:link, a:visited, a:hover, a:active, a:focus {
+	text-decoration:none;
+	outline: none;
+}
+a {
+	color:#d01502;
+}
+a:hover {
+	text-decoration:underline;
+}
+p {
+	font-size:12px;
+	font-family: Helvetica, Arial, Tahoma, sans-serif;
+	line-height:22px;
+}
+dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset, blockquote, article, p {
+	
+}
+.alignleft{
+   float: left;
+   padding-right: 20px;
+}
+.alignright{
+   float: left;
+   padding-right: 20px;
+}
+/* ================= Headers ================= */
+h1 {
+	font-size:24px;
+}
+h2 {
+	font-size:22px;
+}
+h3 {
+	font-size:18px;
+}
+h4 {
+	font-size:16px;
+}
+h5 {
+	font-size:14px;
+}
+h6 {
+	font-size:12px;
+}
+h1.regular, h2.regular, h3.regular, h4.regular, h5.regular, h6.regular {
+	font-weight:400;
+}
+h1.white, h2.white, h3.white, h4.white, h5.white, h6.white {
+	color:#fff;
+}
+h1.page_title {
+	margin-bottom:10px;
+}
+h1.bottom_line {
+	border-bottom:1px solid #d9d9d9;
+	margin: 0 0 30px 0;
+}
+h2.bottom_line {
+	border-bottom:1px solid #d9d9d9;
+	margin-bottom:10px;
+}
+h3.bottom_line {
+	border-bottom:1px solid #d9d9d9;
+	margin-bottom:20px;
+	padding-bottom:15px;
+}
+h3.bottom_line2 {
+	border-bottom:1px solid #d9d9d9;
+	margin-bottom:0;
+	padding-bottom:5px;
+}
+h4.bottom_line {
+	border-bottom:1px solid #d9d9d9;
+	margin-bottom:11px;
+	padding-bottom:10px;
+}
+p.bottom_line {
+	border-bottom:1px solid #d9d9d9;
+	margin-bottom:10px;
+	padding:0 0 13px 0;
+}
+div.bottom_line {
+	border-bottom:1px solid #d9d9d9;
+	margin-bottom:10px;
+	padding:0 0 13px 0;
+}
+p.align_center {
+	text-align:center;
+	font-size:14px;
+	color:#999999;
+}
+p.align_center a {
+	font-weight:bold;
+}
+h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
+	font-weight:600;
+}
+
+/* ================= List Styles ================= */
+ul {
+	list-style:none;
+	margin-top:0;
+}
+ol {
+	margin-bottom:0;
+	margin-top:0;
+}
+ol, ol li {
+	list-style:decimal outside;
+}
+/* ================= Dividers ================= */
+.padding5, .padding10, .padding15, .padding25, .padding30, .padding40, .padding100 {
+   font-size:0;
+	line-height:0;
+}
+.padding5 {
+	padding-top:5px;
+}
+.padding10 {
+	padding-top:10px;
+}
+.padding15 {
+	padding-top:15px;
+}
+.padding25 {
+	padding-top:25px;
+}
+.padding30 {
+	padding-top:30px;
+}
+.padding40 {
+	padding-top:40px;
+}
+.padding100 {
+	padding-top:100px;
+}
+
+/* ================= Header and Logo ================= */
+.container {
+	width:940px;
+	margin:0 auto;
+}
+.header_bg {
+	min-height: 90px;
+	background:#fff;
+}
+.header_bg .logo {
+	float:left;
+	margin-bottom:10px;
+	margin-top: 5px;
+}
+.rssfeed {
+   float: right;
+   margin-top: 5px;
+}
+.logo {
+   font-size: 149px;
+   text-align: left;
+   letter-spacing:-2px;
+   line-height: 150px;
+}
+.logo1 {
+   float: left;
+   font-family: arial narrow, sans-serif;
+   color: #d01502;
+}
+.logo2 {
+   float: left;
+   font-family: arial, sans-serif;
+   color: #222;
+}
+.rule {
+   border-top: 1px solid silver;
+}
+.bottom_rule {
+   border-bottom: 1px solid silver;
+}
+/* ================= Header Menu ================= */
+.main-menu {
+	margin:0 0 0 0;
+	float:right;
+}
+.main-menu li.submenu > a {
+	padding-right:20px;
+	cursor:default;
+}
+.main-menu > ul > li {
+	float:left;
+	margin-right:28px;
+}
+.main-menu ul {
+	margin:0;
+}
+.main-menu li ul {
+	padding-top:2px;
+	left:-2px;
+}
+.main-menu a {
+	display:block;
+	position:relative;
+	font-size:16px;
+	font-family: "nimbus-sans-extended",sans-serif;
+	color:#111;
+}
+.main-menu a:hover {
+	text-decoration:none;
+	color:#333;
+   text-decoration: underline;
+}
+
+/* ================= Footer ================= */
+.footer_bg_bottom {
+	background:#222;
+   height: 300px;
+}
+.footer_bottom .menu ul {
+	list-style: none;
+	padding:20px 0 0 0;
+}
+.footer_bottom .menu ul li {
+	float:left;
+	position:relative;
+	display:block;
+	margin:0 40px 0 0;
+	padding:0;
+	list-style:none;
+	z-index: 9999;
+}
+.footer_bottom .menu ul li a {
+	color:#fff;
+	font-weight:bold;
+	display:block;
+	text-decoration:none;
+	float:left;
+}
+.footer_bottom .menu ul li a.selected {
+	color:#d8c0a8;
+}
+.footer_bottom .menu ul li a:hover {
+	color:#d8c0a8;
+}
+.footer_bottom p, .footer_bottom p a {
+	color:#888;
+	line-height:22px;
+	font-size:11px;
+}
+.footer_bottom .keep_in {
+	padding:20px 0 0 0;
+	font-size:14px;
+	color:#a6a6a6;
+	font-weight:600;
+}
+
+/* ================= Columns ================= */
+.content {
+	width:670px;
+	margin:15px 0 0 0;
+	float:left;
+}
+.columns_2{
+   width: 450px;
+   float: left;
+   margin: 0 20px 0 0;
+}
+.columns_3{
+   width: 300px;
+   float: left;
+   margin: 0 20px 0 0;
+}
+.columns_3_home{
+   width: 300px;
+   float: left;
+   margin: 0 20px 0 0;
+}
+.columns_2.last, .columns_3.last, .columns_3_home.last {
+   margin: 0;
+}
+.columns_3 img, .columns_2 img{
+   width: 100%
+}
+.homepage_columns_header{
+   font-size: 16px;
+   color: #333;
+   background-color: #efefef;
+   padding: 5px 10px 5px 5px;
+}
+
+/* ================= Sidebar ================= */
+.sidebar {
+	width:200px;
+	margin:25px 0 0 0;
+	float:right;
+   background-color: #efefef;
+   padding: 20px;
+   min-height: 900px;
+}
+.sidebar .widget {
+   width:100%;
+}
+.sidebar_header {
+	margin:-10px 0 0 0;
+}
+.sidebar_items ul {
+}
+.sidebar_items ul li a {
+   color:#555;
+}
+.sidebar_items ul li a:hover, .categories ul li a.selected {
+	text-decoration:none;
+	color:#888;
+}
+
+/* === Clearfix === */
+.clear {
+	content:".";
+	display:block;
+	clear:both;
+	height:0;
+   width:0;
+	visibility:hidden;
+   overflow:hidden;
+
+}
+.clearfix:after {
+	clear:both;
+	content:' ';
+	display:block;
+	font-size:0;
+	height:0;
+	line-height:0;
+	visibility:hidden;
+	width:0
+}
+* html .clearfix, :first-child+html .clearfix {
+	zoom:1
+}
+/* ================= Pagination ================= */
+.pagination {
+	margin:10px auto 20px auto;
+	width:50px;
+}
+.pagination li {
+	float:left;
+	margin:0 3px;
+}
+.pagination li a {
+	display:block;
+	width:10px;
+	height:0;
+	padding-top:11px;
+	background-image:url(../images/pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+.pagination li.current a {
+	background-position:0 -11px;
+}
+
+/* ================= Portfolio ================= */
+.gallery_image_container{
+   float: left; 
+   width: 225px;
+   margin: 0 13px 10px 0;
+}
+.gallery_image_container_last{
+   margin: 0 0 10px 0;
+   float: left;
+   width: 225px;
+}
+.gallery_image{
+   width: 100%;
+   cursor: pointer;
+}
+.gallery_title {
+   width: 100%;
+   height: 25px;
+   background-color: #efefef;
+   font-size: 14px;
+   margin-top: -6px;
+   text-align: center;
+   padding-top: 3px;
+}
+.gallery_description{
+   background-color: #efefef;
+   font-size: 12px;
+   text-align: left;
+   padding: 15px;
+}
+
+/* ================= Blog ================= */
+.blog_post{
+   padding-bottom: 30px;
+   border-bottom: 1px solid silver;
+   margin-top: 5px;
+}
+
+.blog_header{
+   border-bottom: 1px solid silver; margin-bottom: 10px;
+}
+.blog_post_content{
+   min-height: 260px;
+   padding-top: 12px;
+}
+.blog_post_body img{
+   width: 100%;
+}
+.blog_post_content h3{
+   margin: 15px 0 0 0;
+}
+.blog_post_content a{
+   font-family: Helvetica, Arial, Tahoma, sans-serif;
+}
+
+.blog_post_image{
+   width: 400px;
+   float: left;
+   padding: 0 20px 20px 0;
+}
+.blog_post_image_full{
+   width: 100%;
+}
+.blog_header .published {
+	padding:4px 0 0 18px;
+	font-size:11px;
+	line-height:11px;
+	background:url("/images/blog_date.png") no-repeat center left;
+	color:#999999;
+	height:14px;
+	display:inline-block;
+	margin:0 -22px 1px 0;
+}
+.blog_header .tweet {
+	font-size:11px;
+	line-height:11px;
+	height:13px;
+	display:inline-block;
+	margin:0 -24px 1px 30px;
+}
+.blog_header .author {
+	padding:4px 0 0 18px;
+	font-size:11px;
+	line-height:11px;
+	background:url("/images/blog_author.png") no-repeat center left;
+	color:#999999;
+	height:13px;
+	display:inline-block;
+	margin:0 10px 10px 0;
+}
+.blog_header .category {
+	padding:4px 0 0 18px;
+	font-size:11px;
+	line-height:11px;
+	background:url("/images/blog_category.png") no-repeat center left;
+	color:#999999;
+	height:13px;
+	display:inline-block;
+	margin:0 10px 10px 0;
+}
+.blog_sidebar_header {
+   color: #222;
+}
+.blog_post_cat_header {
+
+}
+
+/* ================= Recent Posts ================= */
+.recent_post {
+	margin:0 0 15px 0;
+}
+.recent_post .image {
+	width:60px;
+	height:60px;
+	float:left;
+	border:1px solid #cccccc;
+	padding:5px;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px;
+}
+.recent_post .image img {
+	margin:0;
+	padding:0;
+}
+.recent_post .text {
+	width:198px;
+	float:left;
+	padding:0 0 0 10px;
+}
+.recent_post .text a.title {
+	text-decoration:none;
+	color:#666666;
+	font-size:11px;
+	border:0;
+	padding:0;
+	line-height:23px;
+}
+.recent_post .text a.title:hover {
+	text-decoration:underline;
+	color:#d93e39;
+}
+.recent_post .text .comments {
+	background:url("../images/recent_post_comments.png") no-repeat left 85%;
+	display:inline-block;
+	color:#a6a6a6;
+	padding:6px 0 0 13px;
+	font-size:11px;
+	line-height:11px;
+}
+.recent_post .text .time {
+	background:url("../images/hour.png") no-repeat left 85%;
+	display:inline-block;
+	color:#a6a6a6;
+	font-size:11px;
+	padding:2px 5px 0 13px;
+	line-height:11px;
+}
+
+/* ================= Paggination ================= */
+.content .pages {
+   width: 100%
+}
+.pages a {
+	font-size:14px;
+	line-height:14px;
+	color:#707070;
+	display:block;
+	text-align:center;
+	padding:8px 15px;
+	margin:10px 10px 0 0;
+	float:left;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+}
+.pages a:hover {
+	color:#de5853;
+	text-decoration:none;
+}
+.pages a.selected {
+	background:#d93e39;
+	color:#FFFFFF;
+	border:0;
+}
+.pages a.prev {
+	background:url("/images/pages_prev.png") no-repeat center center;
+   padding-top: 20px;
+}
+.pages a.prev:hover {
+	background:url("/images/pages_prev_hover.png") no-repeat center center;
+}
+.pages a.next {
+	background:url("/images/pages_next.png") no-repeat center center;
+   padding-top: 20px;
+}
+.pages a.next:hover {
+	background:url("/images/pages_next_hover.png") no-repeat center center;
+}
+
+/* ======================================================================================================
+ MEDIA QUERIES
+=======================================================================================================*/
+
+/* ================= Tablet (Portrait) 768px - 959px ================= */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+   /* ================= Logo and Main menu ================= */
+   .logo {
+      font-size: 120px;
+      line-height: 120px;
+   }
+   .main-menu > ul > li {
+      float:left;
+      margin-right:24px;
+   }
+   /* ================= Pages ================= */
+   .side_image {
+      width:350px;
+   }
+   /* ================= Portfolio ================= */
+   .gallery_image_container{
+      width: 179px;
+      margin: 0 12px 10px 0;
+   }
+   .gallery_image_container_last {
+      width: 179px;
+   }
+
+   /* ================= Blog Post and Sidebar ================= */
+   .content {
+      width:530px;
+      margin-right:20px;
+   }
+   .blog_post_image{
+      width: 350px;
+   }
+   .blog_post_image_full{
+      width: 530px;
+   }
+   .sidebar {
+      width:160px;
+   }
+
+   /* ================= Container and Columns ================= */
+   .columns_2{
+      width: 366px;
+   }
+   .columns_3{
+      width: 235px;
+   }
+   .columns_3_home{
+      width: 235px;
+   }
+   .columns_3_home h3{
+      font-size: 14px
+   }
+   .container {
+      width: 752px;
+   }
+
+   /* ================= Footer ================= */
+
+   .footer .col_1_3 {
+      width:226px;
+      margin:40px 10px 0 10px;
+   }
+   .footer .col_1_3.last {
+      width:226px;
+      margin:40px 10px 0 10px;
+   }
+}
+/* ================= Mobile (Portrait) < 767px ================= */
+@media only screen and (max-width: 767px) {
+   /* ================= Logo and Main menu ================= */
+   .logo {
+      font-size: 49px;
+      line-height: 49px;
+   }
+   .header_bg {
+      height: auto;
+   }
+   .main-menu {
+      margin:0 0 30px 0;
+      float:left;
+      width:100%;
+   }
+   .main-menu ul {
+      position:static !important;
+      padding:0 !important;
+   }
+   .main-menu li {
+      box-shadow:none !important;
+      border:0 !important;
+      border-top:1px solid #d9d9d9 !important;
+      display:block !important;
+      float:none !important;
+      margin:0 !important;
+   }
+   .main-menu li.submenu > a {
+      cursor:pointer;
+   }
+   .main-menu li a {
+      padding:0 16px;
+      line-height:33px;
+   }
+   .main-menu li ul {
+      display:none !important;
+   }
+   .main-menu li:hover > ul {
+      display:block !important;
+   }
+   /* ================= Pages ================= */
+   .side_image {
+      width:300px;
+   }
+   /* ================= Blog Post and Sidebar ================= */
+   .sidebar {
+      margin: 0 0 0 0;
+      float:none;
+      width: 280px;
+   }
+   .content {
+      float:none;
+      margin-right:0;
+      width:300px;
+   }
+   .blog_post_image{
+      width: 300px;
+   }
+   .blog_post_image_full{
+      width: 300px;
+   }
+
+
+   /* ================= Portfolio ================= */
+   .gallery_image_container{
+      width: 300px;
+      margin: 0 0 10px 0;
+   }
+   .gallery_image_container_last {
+      width: 300px
+   }
+   /* ================= Container and Columns ================= */
+   .columns_2{
+      width: 300px;
+   }
+   .columns_3{
+      width: 300px;
+   }
+   .columns_3_home{
+      width: 300px;
+   }
+   .container {
+      width: 300px;
+   }
+   /* ================= Footer ================= */
+   .footer .col_1_3.last {
+      width:280px;
+      float: none;
+      margin:40px auto 0 auto;
+   }
+   .footer_bottom .col_2_3 {
+      width:280px;
+      float: none;
+      margin:40px auto 0 auto;
+   }
+   .footer_bottom .col_1_3 {
+      width:280px;
+      float: none;
+      margin:40px auto 0 auto;
+   }
+}
+/* ================= Mobile (Landscape) 480px - 767px ================= */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+   /* ================= Logo and Main menu ================= */
+   .logo {
+      font-size: 68px;
+      line-height: 68px;
+   }
+   .main-menu {
+      margin:0 0 30px 0;
+      float:left;
+   }
+   /* ================= Pages ================= */
+   .side_image {
+      width:400px;
+   }
+   /* ================= Blog Post and Sidebar ================= */
+   .content {
+      width:420px;
+      margin-right:0;
+   }
+   .sidebar {
+      float:none;
+      width:400px; /*plus 10px padding = 420 */
+   }
+   .blog_post_image{
+      width: 420px;
+   }
+   .blog_post_image_full{
+      width: 420px;
+   }
+   /* ================= Blog Comments ================= */
+      .comment_box .reply {
+      float:none;
+      margin:0 auto auto 10px;
+   }
+   .comment_box .avatar {
+      float:left;
+   }
+   .comment_box .text {
+      float:left;
+      width:310px;
+      padding:0 0 0 10px;
+   }
+
+   /* ================= Portfolio ================= */
+   .gallery_image_container{
+      width: 200px;
+      margin: 0 10px 10px 0;
+   }
+   .gallery_image_container_last {
+      width: 200px
+   }
+   /* ================= Container and Columns ================= */
+   .columns_2{
+      width: 420px;
+   }
+   .columns_3{
+      width: 300px;
+   }
+   .columns_3_home{
+      width: 420px;
+   }
+   .container {
+      width: 420px;
+   }
+   /* ================= Footer ================= */
+   .footer .col_1_3 {
+      width:420px;
+      margin:40px 0 0 0;
+      float: none;
+      margin:40px auto 0 auto;
+   }
+   .footer .col_1_3.last {
+      width:420px;
+      float: none;
+      margin:40px auto 0 auto;
+   }
+   .footer_bottom .col_2_3 {
+      width:420px;
+      float: none;
+      margin:40px auto 0 auto;
+   }
+   .footer_bottom .col_1_3 {
+      width:420px;
+      float: none;
+      margin:40px auto 0 auto;
+   }
+}
+/* ================= Mobile (Portrait) < 320px ================= */
+@media only screen and (max-width: 317px) {
+   /* =================  Logo ================= */
+   .logo {
+      font-size: 129px;
+      text-align: left;
+      letter-spacing:-2px;
+      line-height: 130px;
+   }
+   .logo1 {
+      float: left;
+      font-family: arial narrow, sans-serif;
+      color: #d01502;
+   }
+   .logo2 {
+      float: left;
+      font-family: arial, sans-serif;
+      color: #222;
+   }
+
+   /* =================  Footer ================= */
+   .footer_bottom .col_1_3 {
+      width:226px;
+      margin:40px auto 0 auto;
+   }
+   .footer_bottom .col_2_3 {
+      width:226px;
+      margin:40px auto 0 auto;
+   }
+   .footer .col_1_3.last {
+      width:226px;
+      margin:40px auto 0 auto;
+   }
+   .footer_bottom .col_1_3.last {
+      width:226px;
+      margin:40px auto 0 auto;
+   }
+   .footer_bottom .col_2_3.last {
+      width:226px;
+      margin:40px auto 0 auto;
+   }
+
+   /* ================= Container and Columns ================= */
+   .columns_2{
+      width: 450px;
+   }
+   .columns_3{
+      width: 300px;
+   }   
+   .columns_3_home{
+      width: 300px;
+   }
+   .container {
+      width: 226px;
+   }
+   /* =================  Blog Post and Sidebar ================= */
+   .content {
+      width:226px;
+      margin-right:0;
+   }
+   .sidebar {
+      width:226px;
+      float:none;
+   }
+   .blog_post_image{
+      width: 420px;
+   }
+   .blog_post_image_full{
+      width: 420px;
+   }
+   /* =================  Portfolio ================= */
+   .gallery_image_container{
+      width: 225px;
+      margin: 0 13px 10px 0;
+   }
+   .gallery_image_container_last {
+      width: 225px
+   }
+}
+
+.typekit-badge {display:none !important;}

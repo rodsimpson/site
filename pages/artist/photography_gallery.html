@@ -1,0 +1,136 @@
+---
+layout: default
+title: Rod Simpson Photography - fall, spring, flowers, dogs, and more
+keywords: Rod Simpson, photographer, gallery, photos, galleries, lightbox, dogs, fall, spring, flowers, abstract
+description: Gallery for photographer Rod Simpson
+---
+
+<link href="/css/royalslider.css" rel="stylesheet">
+<link href="/css/rs-default.css" rel="stylesheet">
+<script src="/js/jquery.picasa.js" type="text/javascript"></script>
+<script  src="/js/jquery.royalslider.min.js"></script>
+
+<script type="text/javascript">
+   var userId = '100548675008187014607';
+
+   $('#Gallery').picasa('init', {
+      'overrideLayout': true,
+      'thumbsize':160
+   }).picasa('gallery', userId, function (album) {
+      var items = '';
+      var count = 1;
+      $.each(album, function (i, element) {
+         if (element.id != "5678668583953100897" && element.id != "5678668033006620577" && element.id != "5794781492271726337" && element.id != "5795991490687152385") {
+            var item = '<div class="';
+            if (count%4 == 0) {
+               item += 'gallery_image_container_last';
+            } else {
+               item += 'gallery_image_container';
+            }
+            item += '">';
+            item += '<img class="gallery_image" src="'+element.thumbs[0]+'" onclick="showGallery(\''+element.id+'\', \''+element.title+'\', \''+element.description+'\');">';
+            item += '<div class="gallery_title">'+element.title+'</div>';
+            item += '</div>'
+            items += item;
+            count++;
+         }
+         $("#gallery_list").html(items);
+         
+      });
+   });
+
+
+   // handler to show the galleries page
+   function showGalleries() {
+      $('#gallery_detail').hide();
+      $('#gallery_list').show();
+   }
+
+   // handler to show a specific gallery
+   function showGallery(albumId, title, description) {
+      //set gallery title
+      $('#gallery_title').html(title);
+      $('#gallery_description').html(description);
+      //hide gallery list
+      $('#gallery_list').hide();
+      //empty out the container
+      $("#gallery").empty();
+      //and fill it with our gallery data
+      $('#picasa-gallery').picasa('init', {
+         'overrideLayout': true,
+         'thumbsize':96,
+         'imagesize': 940
+      }).picasa('gallery', userId, albumId, function (photos) {
+         var images_output = '';
+         $.each(photos, function(i, element) {
+            var image = '<a class="rsImg" data-rsdelay="1000" data-rsbigimg="'+ element.image.url + '" href="'+ element.image.url + '">';
+            image += element.title;
+            image += '<img width="96" height="72" class="rsTmb" src="'+ element.thumbs[0] + '">';
+            image += " </a>\n";
+            images_output += image;
+        });
+         $("#gallery").html('<div id="'+albumId+'" class="royalSlider  rsDefault" style="width: 100%;color: #FFF;">'+images_output+'</div>');
+
+         //show gallery
+         $('#gallery_detail').show();
+         startGallery(albumId);
+      });
+    }
+
+    var sliderInstance = {}
+    function startGallery (id) {
+      //destroy old gallery
+      try{ sliderInstance.destroy(true); } catch(e) {}
+      //start new one;
+      sliderInstance = $('#'+id).royalSlider({
+            arrowsNav: true,
+            fadeinLoadedSlide: true,
+            controlNavigationSpacing: 0,
+            controlNavigation: 'thumbnails',
+            thumbs: {
+               autoCenter: true,
+               fitInViewport: true,
+               orientation: 'horizontal',
+               spacing: 5
+            },
+            fullscreen: {
+               enabled: true,
+               nativeFS: true
+            },
+            keyboardNavEnabled: true,
+            imageScaleMode: 'fit',
+            imageAlignCenter:true,
+            loop: true,
+            numImagesToPreload: 4,
+            autoScaleSlider: true,
+            autoScaleSliderWidth: 940,
+            autoScaleSliderHeight: 710
+         });
+    }
+</script>
+
+<!-- Content -->
+<section class="container clearfix">
+   <div class="clear padding25"></div>
+   <div class="alignright"><a href="">Artist's Statement</a></div>
+   <div class="gallery_listing">
+
+   </div>
+   <div class="portfolio_1_4">
+      <ul id="gallery_list"></ul>
+   </div>
+
+   <div id="gallery_detail" style="display: none;">
+      <div style="width: 100%; height: 40px; border-bottom: 1px solid #D9D9D9;">
+         <div style="float: right"><a href="#" onclick="showGalleries();"><< return to gallery list</a></div>
+      </div>
+      <div id="gallery"></div>
+      <div class="clear padding25"></div>
+      <div>
+         <div id="gallery_title" class="gallery_title">Gallery Title</div>
+         <div id="gallery_description" class="gallery_description">Gallery Description</div>
+      </div>
+   </div>
+</section>
+
+<div class="clear padding40"></div>
