@@ -183,10 +183,10 @@ ol, ol li {
    margin-top: 5px;
 }
 .logo {
-   font-size: 149px;
+   font-size: 161px;
    text-align: left;
-   letter-spacing:-2px;
-   line-height: 150px;
+   letter-spacing:-10px;
+   line-height: 130px;
 }
 .logo1 {
    float: left;
@@ -198,6 +198,18 @@ ol, ol li {
    font-family: arial, sans-serif;
    color: #222;
 }
+.logo1 a, .logo1 a:hover{
+   font-family: arial narrow, sans-serif;
+   color: #d01502;
+   text-decoration: none;
+}
+.logo2 a, .logo2 a:hover{
+   font-family: arial, sans-serif;
+   color: #222;
+   text-decoration: none;
+}
+
+
 .rule {
    border-top: 1px solid silver;
 }
@@ -545,9 +557,9 @@ ol, ol li {
 	line-height:11px;
 }
 
-/* ================= Paggination ================= */
+/* ================= Pagination ================= */
 .content .pages {
-   width: 100%
+   margin: 0 auto;
 }
 .pages a {
 	font-size:14px;
@@ -594,16 +606,13 @@ ol, ol li {
 @media only screen and (min-width: 768px) and (max-width: 959px) {
    /* ================= Logo and Main menu ================= */
    .logo {
-      font-size: 120px;
-      line-height: 120px;
+      font-size: 129px;
+      line-height: 110px;
+      letter-spacing: -8px;
    }
    .main-menu > ul > li {
       float:left;
       margin-right:24px;
-   }
-   /* ================= Pages ================= */
-   .side_image {
-      width:350px;
    }
    /* ================= Portfolio ================= */
    .gallery_image_container{
@@ -613,7 +622,6 @@ ol, ol li {
    .gallery_image_container_last {
       width: 179px;
    }
-
    /* ================= Blog Post and Sidebar ================= */
    .content {
       width:530px;
@@ -628,7 +636,6 @@ ol, ol li {
    .sidebar {
       width:160px;
    }
-
    /* ================= Container and Columns ================= */
    .columns_2{
       width: 366px;
@@ -645,24 +652,14 @@ ol, ol li {
    .container {
       width: 752px;
    }
-
-   /* ================= Footer ================= */
-
-   .footer .col_1_3 {
-      width:226px;
-      margin:40px 10px 0 10px;
-   }
-   .footer .col_1_3.last {
-      width:226px;
-      margin:40px 10px 0 10px;
-   }
 }
 /* ================= Mobile (Portrait) < 767px ================= */
 @media only screen and (max-width: 767px) {
    /* ================= Logo and Main menu ================= */
    .logo {
-      font-size: 49px;
-      line-height: 49px;
+      font-size: 51px;
+      line-height: 40px;
+      letter-spacing: -3px;
    }
    .header_bg {
       height: auto;
@@ -697,10 +694,6 @@ ol, ol li {
    .main-menu li:hover > ul {
       display:block !important;
    }
-   /* ================= Pages ================= */
-   .side_image {
-      width:300px;
-   }
    /* ================= Blog Post and Sidebar ================= */
    .sidebar {
       margin: 0 0 0 0;
@@ -718,8 +711,6 @@ ol, ol li {
    .blog_post_image_full{
       width: 300px;
    }
-
-
    /* ================= Portfolio ================= */
    .gallery_image_container{
       width: 300px;
@@ -741,37 +732,18 @@ ol, ol li {
    .container {
       width: 300px;
    }
-   /* ================= Footer ================= */
-   .footer .col_1_3.last {
-      width:280px;
-      float: none;
-      margin:40px auto 0 auto;
-   }
-   .footer_bottom .col_2_3 {
-      width:280px;
-      float: none;
-      margin:40px auto 0 auto;
-   }
-   .footer_bottom .col_1_3 {
-      width:280px;
-      float: none;
-      margin:40px auto 0 auto;
-   }
 }
 /* ================= Mobile (Landscape) 480px - 767px ================= */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
    /* ================= Logo and Main menu ================= */
    .logo {
-      font-size: 68px;
-      line-height: 68px;
+      font-size: 72px;
+      line-height: 55px;
+      letter-spacing: -5px;
    }
    .main-menu {
       margin:0 0 30px 0;
       float:left;
-   }
-   /* ================= Pages ================= */
-   .side_image {
-      width:400px;
    }
    /* ================= Blog Post and Sidebar ================= */
    .content {
@@ -788,20 +760,6 @@ ol, ol li {
    .blog_post_image_full{
       width: 420px;
    }
-   /* ================= Blog Comments ================= */
-      .comment_box .reply {
-      float:none;
-      margin:0 auto auto 10px;
-   }
-   .comment_box .avatar {
-      float:left;
-   }
-   .comment_box .text {
-      float:left;
-      width:310px;
-      padding:0 0 0 10px;
-   }
-
    /* ================= Portfolio ================= */
    .gallery_image_container{
       width: 200px;
@@ -823,106 +781,86 @@ ol, ol li {
    .container {
       width: 420px;
    }
-   /* ================= Footer ================= */
-   .footer .col_1_3 {
-      width:420px;
-      margin:40px 0 0 0;
-      float: none;
-      margin:40px auto 0 auto;
-   }
-   .footer .col_1_3.last {
-      width:420px;
-      float: none;
-      margin:40px auto 0 auto;
-   }
-   .footer_bottom .col_2_3 {
-      width:420px;
-      float: none;
-      margin:40px auto 0 auto;
-   }
-   .footer_bottom .col_1_3 {
-      width:420px;
-      float: none;
-      margin:40px auto 0 auto;
-   }
 }
+
 /* ================= Mobile (Portrait) < 320px ================= */
 @media only screen and (max-width: 317px) {
    /* =================  Logo ================= */
    .logo {
-      font-size: 129px;
-      text-align: left;
-      letter-spacing:-2px;
-      line-height: 130px;
+      font-size: 51px;
+      line-height: 40px;
+      letter-spacing: -3px;
    }
-   .logo1 {
-      float: left;
-      font-family: arial narrow, sans-serif;
-      color: #d01502;
+   .header_bg {
+      height: auto;
    }
-   .logo2 {
-      float: left;
-      font-family: arial, sans-serif;
-      color: #222;
+   .main-menu {
+      margin:0 0 30px 0;
+      float:left;
+      width:100%;
    }
-
-   /* =================  Footer ================= */
-   .footer_bottom .col_1_3 {
-      width:226px;
-      margin:40px auto 0 auto;
+   .main-menu ul {
+      position:static !important;
+      padding:0 !important;
    }
-   .footer_bottom .col_2_3 {
-      width:226px;
-      margin:40px auto 0 auto;
+   .main-menu li {
+      box-shadow:none !important;
+      border:0 !important;
+      border-top:1px solid #d9d9d9 !important;
+      display:block !important;
+      float:none !important;
+      margin:0 !important;
    }
-   .footer .col_1_3.last {
-      width:226px;
-      margin:40px auto 0 auto;
+   .main-menu li.submenu > a {
+      cursor:pointer;
    }
-   .footer_bottom .col_1_3.last {
-      width:226px;
-      margin:40px auto 0 auto;
+   .main-menu li a {
+      padding:0 16px;
+      line-height:33px;
    }
-   .footer_bottom .col_2_3.last {
-      width:226px;
-      margin:40px auto 0 auto;
+   .main-menu li ul {
+      display:none !important;
    }
-
+   .main-menu li:hover > ul {
+      display:block !important;
+   }
+   /* ================= Blog Post and Sidebar ================= */
+   .sidebar {
+      margin: 0 0 0 0;
+      float:none;
+      width: 280px;
+   }
+   .content {
+      float:none;
+      margin-right:0;
+      width:300px;
+   }
+   .blog_post_image{
+      width: 300px;
+   }
+   .blog_post_image_full{
+      width: 300px;
+   }
+   /* ================= Portfolio ================= */
+   .gallery_image_container{
+      width: 300px;
+      margin: 0 0 10px 0;
+   }
+   .gallery_image_container_last {
+      width: 300px
+   }
    /* ================= Container and Columns ================= */
    .columns_2{
-      width: 450px;
+      width: 300px;
    }
    .columns_3{
       width: 300px;
-   }   
+   }
    .columns_3_home{
       width: 300px;
    }
    .container {
-      width: 226px;
-   }
-   /* =================  Blog Post and Sidebar ================= */
-   .content {
-      width:226px;
-      margin-right:0;
-   }
-   .sidebar {
-      width:226px;
-      float:none;
-   }
-   .blog_post_image{
-      width: 420px;
-   }
-   .blog_post_image_full{
-      width: 420px;
-   }
-   /* =================  Portfolio ================= */
-   .gallery_image_container{
-      width: 225px;
-      margin: 0 13px 10px 0;
-   }
-   .gallery_image_container_last {
-      width: 225px
+      width: 300px;
    }
 }
 
