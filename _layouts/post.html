@@ -8,18 +8,18 @@ layout: default
 
          <div style="float: left">
          {% if page.previous.url %}
-         <a href="{{page.previous.url}}" title="Previous Post:
+         <a class="pre_next_post" href="{{page.previous.url}}" title="Previous Post:
          {{page.previous.title}}">&laquo; {{page.previous.title}}</a>
          {% endif %}
          </div>
 
          <div style="float: right">
          {% if page.next.url %}
-         <a href="{{page.next.url}}" title="next Post:
+         <a class="pre_next_post" href="{{page.next.url}}" title="next Post:
          {{page.next.title}}">{{page.next.title}} &raquo; </a>
          {% endif %}
          </div>
-         
+         <div class="clear padding15"></div>
          <div class="clearfix"></div>
 
          <h1>{{ page.title }}</h1>

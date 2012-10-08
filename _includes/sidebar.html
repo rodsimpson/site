@@ -1,5 +1,5 @@
 <div class="widget">
-   <h2><a class="blog_sidebar_header" href="/categories">Categories</a></h2>
+   <h3><a class="blog_sidebar_header" href="/categories">Categories</a></h3>
    <div class="sidebar_items">
       <ul>
          {{ site.cats | browse_list }}
@@ -8,7 +8,7 @@
 </div>
 <div class="clear padding40"></div>
 <div class="widget">
-   <h2><a class="blog_sidebar_header" href="/archives.html">Archives</a></h2>
+   <h3><a class="blog_sidebar_header" href="/archives.html">Archives</a></h3>
    <div class="sidebar_items">
       <ul>
        {% monthly_archives %}
@@ -18,7 +18,7 @@
 
 <div class="clear padding40"></div>
 <div class="widget">
-   <h2 class="sidebar_header">Recent Posts</h2>
+   <h3 class="sidebar_header">Recent Posts</h3>
    <div class="sidebar_items">
       <ul style="list-style-type: square; margin-left: 10px;">
          {% for post in site.posts limit:4 %}
@@ -32,7 +32,7 @@
 
 <div class="clear padding40"></div>
 <div class="widget">
-   <h2><a class="blog_sidebar_header" href="/tags">Tags</a></h2>
+   <h3><a class="blog_sidebar_header" href="/tags">Tags</a></h3>
    <div class="sidebar_items">
       {% tag_cloud %}
    </div>

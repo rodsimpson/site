@@ -4,7 +4,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	padding:0;
 	border:0;
 	outline:0;
-	font-family: "nimbus-sans-extended",Helvetica, Arial, Tahoma, sans-serif;
+	font-family: Arial, sans-serif;
 }
 strong, b {
 	font-weight:bold;
@@ -14,13 +14,9 @@ em, dfn, i {
 }
 /* ================= General tags ================= */
 body {
-	font: 12px/1.7 Helvetica, Arial, Tahoma, sans-serif;
 	color:#222;
 	-webkit-font-smoothing: antialiased;
 	backgorund:#f6f4e7;
-}
-h1, h2, h3, h4, h5, h6 {
-	font-weight:400;
 }
 a:link, a:visited, a:hover, a:active, a:focus {
 	text-decoration:none;
@@ -34,12 +30,9 @@ a:hover {
 }
 p {
 	font-size:12px;
-	font-family: Helvetica, Arial, Tahoma, sans-serif;
-	line-height:22px;
+	font-family: Arial, sans-serif;
+	line-height:18px;
    margin-bottom: 10px;
-}
-dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset, blockquote, article, p {
-	
 }
 .alignleft{
    float: left;
@@ -50,14 +43,21 @@ dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset, blockquot
    padding-right: 20px;
 }
 /* ================= Headers ================= */
+h1, h2, h3, h4, h5, h6 {
+   font-family: "dejarip",Arial, sans-serif;
+	font-weight:400;
+}
 h1 {
-	font-size:24px;
+	font-size:22px;
+   text-transform:uppercase;
 }
 h2 {
-	font-size:22px;
+	font-size:20px;
+   text-transform:uppercase;
 }
 h3 {
 	font-size:18px;
+   text-transform:uppercase;
 }
 h4 {
 	font-size:16px;
@@ -68,18 +68,14 @@ h5 {
 h6 {
 	font-size:12px;
 }
-h1.regular, h2.regular, h3.regular, h4.regular, h5.regular, h6.regular {
-	font-weight:400;
-}
-h1.white, h2.white, h3.white, h4.white, h5.white, h6.white {
-	color:#fff;
-}
 h1.page_title {
 	margin-bottom:10px;
 }
 h1.bottom_line {
-	border-bottom:1px solid #d9d9d9;
+	background-color: #efefef;
 	margin: 0 0 30px 0;
+   padding: 12px 0 2px 5px;
+
 }
 h2.bottom_line {
 	border-bottom:1px solid #d9d9d9;
@@ -148,6 +144,9 @@ ol, ol li {
 .padding15 {
 	padding-top:15px;
 }
+.padding20 {
+	padding-top:20px;
+}
 .padding25 {
 	padding-top:25px;
 }
@@ -173,43 +172,28 @@ ol, ol li {
 	min-height: 90px;
 	background:#fff;
 }
-.header_bg .logo {
-	float:left;
-	margin-bottom:10px;
-	margin-top: 5px;
-}
 .rssfeed {
    float: right;
    margin-top: 5px;
 }
 .logo {
-   font-size: 161px;
+   font-size: 169px;
    text-align: left;
-   letter-spacing:-10px;
-   line-height: 130px;
-}
-.logo1 {
-   float: left;
-   font-family: arial narrow, sans-serif;
-   color: #d01502;
-}
-.logo2 {
-   float: left;
-   font-family: arial, sans-serif;
-   color: #222;
+   letter-spacing: -13px;
+   line-height: 150px;
 }
 .logo1 a, .logo1 a:hover{
-   font-family: arial narrow, sans-serif;
+   float: left;
+   font-family: "dejarip",Arial, sans-serif;
    color: #d01502;
    text-decoration: none;
 }
 .logo2 a, .logo2 a:hover{
-   font-family: arial, sans-serif;
+   float: left;
+   font-family: "dejarip",Arial, sans-serif;
    color: #222;
    text-decoration: none;
 }
-
-
 .rule {
    border-top: 1px solid silver;
 }
@@ -218,7 +202,7 @@ ol, ol li {
 }
 /* ================= Header Menu ================= */
 .main-menu {
-	margin:0 0 0 0;
+	margin:10px 0 0 0;
 	float:right;
 }
 .main-menu li.submenu > a {
@@ -240,7 +224,7 @@ ol, ol li {
 	display:block;
 	position:relative;
 	font-size:16px;
-	font-family: "nimbus-sans-extended",sans-serif;
+	font-family: "dejarip",Arial, sans-serif;
 	color:#111;
 }
 .main-menu a:hover {
@@ -262,7 +246,7 @@ ol, ol li {
 	float:left;
 	position:relative;
 	display:block;
-	margin:0 40px 0 0;
+	margin:0 40px 20px 0;
 	padding:0;
 	list-style:none;
 	z-index: 9999;
@@ -275,23 +259,16 @@ ol, ol li {
 	float:left;
 }
 .footer_bottom .menu ul li a.selected {
-	color:#d8c0a8;
+	color:#fff;
 }
 .footer_bottom .menu ul li a:hover {
-	color:#d8c0a8;
+	color:#ccc;
 }
 .footer_bottom p, .footer_bottom p a {
 	color:#888;
 	line-height:22px;
 	font-size:11px;
 }
-.footer_bottom .keep_in {
-	padding:20px 0 0 0;
-	font-size:14px;
-	color:#a6a6a6;
-	font-weight:600;
-}
-
 /* ================= Columns ================= */
 .content {
 	width:670px;
@@ -321,11 +298,14 @@ ol, ol li {
 }
 .homepage_columns_header{
    font-size: 16px;
-   color: #333;
    background-color: #efefef;
-   padding: 5px 10px 5px 5px;
+   padding: 10px;
 }
-
+.home_page_colums_body{
+   padding: 10px;
+   min-height: 200px;
+   border: 1px solid #efefef;
+}
 /* ================= Sidebar ================= */
 .sidebar {
 	width:200px;
@@ -345,12 +325,12 @@ ol, ol li {
 }
 .sidebar_items ul li a {
    color:#555;
+   font-size: 12px;
 }
 .sidebar_items ul li a:hover, .categories ul li a.selected {
 	text-decoration:none;
 	color:#888;
 }
-
 /* === Clearfix === */
 .clear {
 	content:".";
@@ -397,8 +377,7 @@ ol, ol li {
 .pagination li.current a {
 	background-position:0 -11px;
 }
-
-/* ================= Portfolio ================= */
+/* ================= Gallery ================= */
 .gallery_image_container{
    float: left; 
    width: 225px;
@@ -435,7 +414,9 @@ ol, ol li {
    border-bottom: 1px solid silver;
    margin-top: 5px;
 }
-
+.pre_next_post{
+   font-size: 14px;
+}
 .blog_header{
    border-bottom: 1px solid silver; margin-bottom: 10px;
 }
@@ -446,13 +427,16 @@ ol, ol li {
 .blog_post_body img{
    width: 100%;
 }
+.blog_post_content h2{
+   text-transform: none;
+}
 .blog_post_content h3{
    margin: 15px 0 0 0;
+   text-transform: none;
 }
 .blog_post_content a{
-   font-family: Helvetica, Arial, Tahoma, sans-serif;
+   font-family: Arial, sans-serif;
 }
-
 .blog_post_image{
    width: 400px;
    float: left;
@@ -501,61 +485,6 @@ ol, ol li {
 .blog_sidebar_header {
    color: #222;
 }
-.blog_post_cat_header {
-
-}
-
-/* ================= Recent Posts ================= */
-.recent_post {
-	margin:0 0 15px 0;
-}
-.recent_post .image {
-	width:60px;
-	height:60px;
-	float:left;
-	border:1px solid #cccccc;
-	padding:5px;
-	-webkit-border-radius:2px;
-	-moz-border-radius:2px;
-	border-radius:2px;
-}
-.recent_post .image img {
-	margin:0;
-	padding:0;
-}
-.recent_post .text {
-	width:198px;
-	float:left;
-	padding:0 0 0 10px;
-}
-.recent_post .text a.title {
-	text-decoration:none;
-	color:#666666;
-	font-size:11px;
-	border:0;
-	padding:0;
-	line-height:23px;
-}
-.recent_post .text a.title:hover {
-	text-decoration:underline;
-	color:#d93e39;
-}
-.recent_post .text .comments {
-	background:url("../images/recent_post_comments.png") no-repeat left 85%;
-	display:inline-block;
-	color:#a6a6a6;
-	padding:6px 0 0 13px;
-	font-size:11px;
-	line-height:11px;
-}
-.recent_post .text .time {
-	background:url("../images/hour.png") no-repeat left 85%;
-	display:inline-block;
-	color:#a6a6a6;
-	font-size:11px;
-	padding:2px 5px 0 13px;
-	line-height:11px;
-}
 
 /* ================= Pagination ================= */
 .content .pages {
@@ -598,6 +527,23 @@ ol, ol li {
 	background:url("/images/pages_next_hover.png") no-repeat center center;
 }
 
+/* ================= Page Specific ================= */
+.writing_list, .page_list{
+   margin-left: 20px;
+   font-size: 14px;
+}
+.writing_list{
+   list-style-type: circle;
+   margin-left: 20px;
+   font-size: 14px;
+}
+.writing_list li{
+   margin: 0 0 10px 0;
+}
+.page_list li{
+   margin: 0 0 10px -19px;
+}
+
 /* ======================================================================================================
  MEDIA QUERIES
 =======================================================================================================*/
@@ -606,9 +552,8 @@ ol, ol li {
 @media only screen and (min-width: 768px) and (max-width: 959px) {
    /* ================= Logo and Main menu ================= */
    .logo {
-      font-size: 129px;
-      line-height: 110px;
-      letter-spacing: -8px;
+      font-size: 139px;
+      line-height: 125px;
    }
    .main-menu > ul > li {
       float:left;
@@ -657,8 +602,8 @@ ol, ol li {
 @media only screen and (max-width: 767px) {
    /* ================= Logo and Main menu ================= */
    .logo {
-      font-size: 51px;
-      line-height: 40px;
+      font-size: 52px;
+      line-height: 50px;
       letter-spacing: -3px;
    }
    .header_bg {
@@ -737,9 +682,8 @@ ol, ol li {
 @media only screen and (min-width: 480px) and (max-width: 767px) {
    /* ================= Logo and Main menu ================= */
    .logo {
-      font-size: 72px;
-      line-height: 55px;
-      letter-spacing: -5px;
+      font-size: 71px;
+      line-height: 65px;
    }
    .main-menu {
       margin:0 0 30px 0;
@@ -787,7 +731,7 @@ ol, ol li {
 @media only screen and (max-width: 317px) {
    /* =================  Logo ================= */
    .logo {
-      font-size: 51px;
+      font-size: 52px;
       line-height: 40px;
       letter-spacing: -3px;
    }

@@ -1,6 +1,6 @@
 {% for post in posts limit: listing_limit %}
 <div class="blog_post">
-   <h3><a class="blog_sidebar_header" href="{{ post.url }}">{{ post.title }}</a></h3>
+   <h2><a class="blog_sidebar_header" href="{{ post.url }}">{{ post.title }}</a></h2>
 
    <div class="blog_header">
       <div class="published">{{ post.date | date_to_string }}</div>
