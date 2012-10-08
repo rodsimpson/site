@@ -47,7 +47,7 @@ layout: nil
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
-  {% for post in site.posts limit:20 %}
+  {% for post in site.posts limit:50 %}
   <url>
     <loc>http://rodsimpson.com{{ post.url }}/</loc>
     <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>

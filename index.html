@@ -26,7 +26,7 @@ description: Rod Simpson - Artist, Writer, Developer
          var items = '';
          $.each(photos, function(i, element) {
             //items += '<a class="rsImg" href="'+element.image.url+'">'+element.title+'</a>';
-            items += '<a class="rsImg" data-rsdelay="2000" data-rsbigimg="'+ element.image.url + '" href="'+ element.image.url + '">'+element.title+'</a>';
+            items += '<a class="rsImg" data-rsdelay="3000" data-rsbigimg="'+ element.image.url + '" href="'+ element.image.url + '">'+element.title+'</a>';
          });
          $("#gallery").html(items);
          var si = $('#gallery').royalSlider({
@@ -45,7 +45,7 @@ description: Rod Simpson - Artist, Writer, Developer
             fadeinLoadedSlide: false,
             globalCaption: false,
             keyboardNavEnabled: true,
-            transitionSpeed: 1000,
+            transitionSpeed: 2000,
             transitionType: 'fade'
          }).data('royalSlider');
 
@@ -75,7 +75,10 @@ description: Rod Simpson - Artist, Writer, Developer
         <h2>Writer:</h2><h4>articles, novels, short stories</h4>
       </div>
       <div class="home_page_colums_body">
-         <p>Rod Simpson received the degree of Bachelor of Fine Arts from the Univeristy of Florida in 1996.  Since then, he has <br /> <a href="#">more info</a></p>
+         <p>
+            Recently I was visiting my mother's house. While cleaning out some old boxes, I came across several "books" that I made as boy. These weren't exactly Pulitzer candidates, and with such pedestrian titles as "The Bean Man", about a man who collected beans, and "The Spaceship Man", about a man who lives on a spaceship...
+            <br /> <a href="/2012/10/08/rod-simpson-writing-history/">more info</a>
+         </p>
       </div>
    </div>
    <div class="columns_3_home last">
