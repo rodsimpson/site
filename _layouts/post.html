@@ -26,6 +26,10 @@ layout: default
 
          <div class="blog_header">
             <div class="published">{{ page.date | date_to_string }}</div>
+            <div class="tweet">
+               <a href="https://twitter.com/share" class="twitter-share-button" data-via="rockerston" data-lang="uk" data-dnt="true">Твіт</a>
+               <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
             <div class="author"><a href="pages/writer/writing.html">Rod Simpson</a></div>
             <div class="category">Categories:
                {% if page.categories: %}
