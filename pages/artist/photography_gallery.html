@@ -12,46 +12,79 @@ description: Gallery for photographer Rod Simpson
 
 <script type="text/javascript">
    var userId = '100548675008187014607';
+   var galleryLoaded = false;
+   var galleryIndexLoaded = false;
+   //trigger the event (useful on page load).
+   $(window).hashchange();
 
-   $('#Gallery').picasa('init', {
-      'overrideLayout': true,
-      'thumbsize':160
-   }).picasa('gallery', userId, function (album) {
-      var items = '';
-      var count = 1;
-      $.each(album, function (i, element) {
-         if (element.id != "5678668583953100897" && element.id != "5678668033006620577" && element.id != "5794781492271726337" && element.id != "5795991490687152385") {
-            var item = '<div class="';
-            if (count%4 == 0) {
-               item += 'gallery_image_container_last';
-            } else {
-               item += 'gallery_image_container';
-            }
-            item += '">';
-            item += '<img class="gallery_image" src="'+element.thumbs[0]+'" onclick="showGallery(\''+element.id+'\', \''+element.title+'\', \''+element.description+'\');">';
-            item += '<div class="gallery_title">'+element.title+'</div>';
-            item += '</div>'
-            items += item;
-            count++;
-         }
-         $("#gallery_list").html(items);
-         
-      });
+   //bind the hash change event.
+   $(window).hashchange( function(){
+        selectGallery();
+   })
+
+   //on page refresh, load the correct slide
+   $(window).bind("load", function() {
+      selectGallery();
    });
 
+   function selectGallery() {
+      try {
+         albumId = location.hash.replace(/^#/, '');
+      } catch (e) {
+         albumId = 0;
+      }
+      if (albumId != 0 && !isNaN(albumId)) {
+         if (!galleryLoaded) {
+            showGallery(albumId);
+         }
+      } else {
+         showGalleryIndex();
+      }
+   }
+
+   function selectGalleryIndex(){
+      document.location.hash = '';
+   }
 
    // handler to show the galleries page
-   function showGalleries() {
+   function showGalleryIndex() {
+      if (!galleryIndexLoaded) {
+         $('#Gallery').picasa('init', {
+               'overrideLayout': true,
+               'thumbsize':160
+            }).picasa('gallery', userId, function (data) {
+               var items = '';
+               var count = 1;
+               var photos = data['photos'];
+               $.each(photos, function (i, element) {
+                  if (element.id != "5678668583953100897" && element.id != "5678668033006620577" && element.id != "5794781492271726337" && element.id != "5795991490687152385") {
+                     var item = '<div class="';
+                     if (count%4 == 0) {
+                        item += 'gallery_image_container_last';
+                     } else {
+                        item += 'gallery_image_container';
+                     }
+                     item += '">';
+                     item += '<img class="gallery_image" src="'+element.thumbs[0]+'" onclick="showGallery(\''+element.id+'\');">';
+                     item += '<div class="gallery_title" onclick="showGallery(\''+element.id+'\');">'+element.title+'</div>';
+                     item += '</div>'
+                     items += item;
+                     count++;
+                  }
+                  $("#gallery_list").html(items);
+               });
+            });
+      }
       $('#gallery_detail').hide();
       $('#gallery_list').show();
       $('#artist_statement').show();
+      galleryLoaded = false;
+      galleryIndexLoaded = true;
    }
 
    // handler to show a specific gallery
-   function showGallery(albumId, title, description) {
-      //set gallery title
-      $('#gallery_title').html(title);
-      $('#gallery_description').html(description);
+   function showGallery(albumId) {
+      document.location.hash = albumId;
       //hide gallery list
       $('#gallery_list').hide();
       $('#artist_statement').hide();
@@ -62,7 +95,10 @@ description: Gallery for photographer Rod Simpson
          'overrideLayout': true,
          'thumbsize':96,
          'imagesize': 940
-      }).picasa('gallery', userId, albumId, function (photos) {
+      }).picasa('gallery', userId, albumId, function (data) {
+         var photos = data['photos'];
+         var title = data['title'];
+         var description = data['description'];
          var images_output = '';
          $.each(photos, function(i, element) {
             var image = '<a class="rsImg" data-rsdelay="1000" data-rsbigimg="'+ element.image.url + '" href="'+ element.image.url + '">';
@@ -73,10 +109,15 @@ description: Gallery for photographer Rod Simpson
         });
          $("#gallery").html('<div id="'+albumId+'" class="royalSlider  rsDefault" style="width: 100%;color: #FFF;">'+images_output+'</div>');
 
+         //set gallery title
+         $('#gallery_title').html(title);
+         $('#gallery_description').html(description);
+
          //show gallery
          $('#gallery_detail').show();
          startGallery(albumId);
       });
+      galleryLoaded = albumId;
     }
 
     var sliderInstance = {}
@@ -127,7 +168,7 @@ description: Gallery for photographer Rod Simpson
 
    <div id="gallery_detail" style="display: none;">
       <div style="width: 100%; height: 40px; border-bottom: 1px solid #D9D9D9;">
-         <div style="float: right"><a href="#" onclick="showGalleries();"><< return to gallery list</a></div>
+         <div style="float: right"><a href="#" onclick="selectGalleryIndex();"><< return to gallery list</a></div>
       </div>
       <div id="gallery"></div>
       <div class="clear padding25"></div>

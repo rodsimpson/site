@@ -86,7 +86,7 @@ module Jekyll
         months.each do |year, m|
           m.each do |month, posts|
             time = Time.new(year, month)
-            result.insert(0, %(<li><a href="#{time.strftime('/%Y/%m')}">#{time.strftime('%B %Y')}</a> (#{posts.length})</li>)) # for reverse order
+            result.insert(0, %(<li><a href="#{time.strftime('/%Y/%m')}">#{time.strftime('%B %Y')}</a> <span class="archive_count">(#{posts.length})</span></li>)) # for reverse order
           end
         end
         

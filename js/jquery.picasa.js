@@ -1,7 +1,7 @@
 // Michael West
 // 03.27.2012
 // Picasa plug-in
-//https://code.google.com/apis/picasaweb/docs/2.0/developers_guide_protocol.html
+// https://code.google.com/apis/picasaweb/docs/2.0/developers_guide_protocol.html
 //
 // album query
 // http://picasaweb.google.com/data/feed/api/user/userID
@@ -158,8 +158,10 @@
 
 				photos[photos.length] = photo;
 			});
-
-			callback.call(that, photos);
+         data['photos'] = photos;
+         //photos['data'] = data;
+			
+         callback.call(that, data);
 		},
 
 		_call: function (type, url, params, callback) {

@@ -3,7 +3,7 @@ layout: post
 title: Rocky Mountain National Park
 keywords: Rod Simpson, photography, trips, photos, tips, how-tos, galleries, gallery
 description: Trip Report - Rocky Mountain National Park
-date: 2009-10-31 18:00:00 -06:00
+date: 2009-11-13 18:00:00 -06:00
 image: https://lh3.googleusercontent.com/-ix_B6Kxqom4/UGyiqcupMpI/AAAAAAAAAPc/cycJhEl2erM/s640/untitled-2.jpg
 cats:
   - Photography

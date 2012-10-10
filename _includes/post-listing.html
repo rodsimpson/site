@@ -9,7 +9,7 @@
          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
       </div>
       <div class="author"><a href="pages/writer/writing.html">Rod Simpson</a></div>
-      <a href="http://foo.com/bar.html#disqus_thread">Link</a>
+      <div class="comments"><a href="{{ post.url }}#disqus_thread">0 Comments</a></div>
       <div class="category">Categories:
          {% if post.categories: %}
             {% for category in post.categories: %}
@@ -27,18 +27,39 @@
    </div>
 
    <div class="blog_post_content">
-      {% if post.image %}
-      <a href="{{ post.url }}"><img class="blog_post_image" src="{{ post.image }}" alt="{{ post.title }}" /></a>
-      {% endif %}
-      <div class="blog_post_body">
-         {% if post.summary %}
-         <p>{{ post.summary | strip_html | truncatewords: 70 }}</p>
-         {% else %}
-         <p>{{ post.content | strip_html | truncatewords: 70 }}</p>
-         {% endif %}
-         <a style="" href="{{ post.url }}" class="button white">>> read more</a>
-      </div>
+      <table>
+         <tr>
+            <td>
+               {% if post.image %}
+               <a href="{{ post.url }}"><img class="blog_post_image" src="{{ post.image }}" alt="{{ post.title }}" /></a>
+               {% endif %}
+            </td>
+            <td class="blog_post_body">
+               <p>
+                  {% if post.summary %}
+                  {{ post.summary | strip_html | truncatewords: 60 }}
+                  {% else %}
+                  {{ post.content | strip_html | truncatewords: 60 }}
+                  {% endif %}
+                  <br/>
+                  <a class="read_more" href="{{ post.url }}" class="button white">>> read more</a>
+               </p>
+            </td>
+         </tr>
+      </table>
    </div>
 </div>
 <div class="clear padding40"></div>
 {% endfor %}
+<script type="text/javascript">
+   //script for comment counts
+   var disqus_shortname = 'rodsimpson';
+
+   /* * * DON'T EDIT BELOW THIS LINE * * */
+   (function () {
+      var s = document.createElement('script'); s.async = true;
+      s.type = 'text/javascript';
+      s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+   }());
+</script>
