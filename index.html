@@ -22,10 +22,9 @@ description: Rod Simpson - Artist, Writer, Developer
          'overrideLayout': true,
          'thumbsize':96,
          'imagesize': 1024
-      }).picasa('gallery', "100548675008187014607", "5794781492271726337", function (photos) {
+      }).picasa('gallery', "100548675008187014607", "5794781492271726337", function (data) {
          var items = '';
-         $.each(photos, function(i, element) {
-            //items += '<a class="rsImg" href="'+element.image.url+'">'+element.title+'</a>';
+         $.each(data['photos'], function(i, element) {
             items += '<a class="rsImg" data-rsdelay="3000" data-rsbigimg="'+ element.image.url + '" href="'+ element.image.url + '">'+element.title+'</a>';
          });
          $("#gallery").html(items);
