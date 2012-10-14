@@ -4,7 +4,7 @@ title: How photography became a serious part of my life
 keywords: Rod Simpson, photography, trips, photos, tips, how-tos, galleries, gallery
 description: Rod Simpson - how photography has become part of my life
 date: 2012-10-07 17:00:00 -06:00
-image: https://lh4.googleusercontent.com/--5TqapmueQ8/UHI68ExVoiI/AAAAAAAAAfc/m5TT8sq_gsM/s640/untitled.jpg
+image: https://lh4.googleusercontent.com/--5TqapmueQ8/UHI68ExVoiI/AAAAAAAAAjY/SFPc8dPAezA/s640/untitled.jpg
 cats:
   - Photography
 tags:

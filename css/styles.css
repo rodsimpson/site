@@ -275,6 +275,11 @@ ol, ol li {
 	margin:15px 0 0 0;
 	float:left;
 }
+.blog_columns_2{
+   width: 325px;
+   float: left;
+   margin: 0 20px 0 0;
+}
 .columns_2{
    width: 460px;
    float: left;
@@ -290,7 +295,7 @@ ol, ol li {
    float: left;
    margin: 0 20px 0 0;
 }
-.columns_2.last, .columns_3.last, .columns_3_home.last {
+.blog_columns_2.last, .columns_2.last, .columns_3.last, .columns_3_home.last {
    margin: 0;
 }
 .columns_3 img, .columns_2 img{
@@ -303,7 +308,7 @@ ol, ol li {
 }
 .home_page_colums_body{
    padding: 10px;
-   min-height: 200px;
+   min-height: 240px;
    border: 1px solid #efefef;
 }
 /* ================= Sidebar ================= */
@@ -418,9 +423,8 @@ ol, ol li {
 }
 
 /* ================= Blog ================= */
-.blog_post{
-   border-bottom: 1px solid silver;
-   margin-top: 5px;
+.blog_post{ 
+   margin-top: 10px;
 }
 .pre_next_post{
    font-size: 14px;
@@ -612,6 +616,9 @@ ol, ol li {
    .columns_2{
       width: 366px;
    }
+   .blog_columns_2{
+      width: 530px;
+   }
    .columns_3{
       width: 235px;
    }
@@ -695,6 +702,9 @@ ol, ol li {
    .columns_2{
       width: 300px;
    }
+   .blog_columns_2{
+      width: 300px;
+   }
    .columns_3{
       width: 300px;
    }
@@ -741,6 +751,9 @@ ol, ol li {
    }
    /* ================= Container and Columns ================= */
    .columns_2{
+      width: 420px;
+   }
+   .blog_columns_2{
       width: 420px;
    }
    .columns_3{
@@ -822,6 +835,9 @@ ol, ol li {
    }
    /* ================= Container and Columns ================= */
    .columns_2{
+      width: 300px;
+   }
+   .blog_columns_2{
       width: 300px;
    }
    .columns_3{

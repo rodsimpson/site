@@ -7,9 +7,9 @@ description: Blog Tags
 
 <section class="container clearfix">
    <div class="content clearfix">
-      <h1>Posts tagged with "<a href="/tags/{{ page.tag }}">{{ page.tag }}</a>"</h1>
+      <div class="clear padding10 clearfix"></div>
+      <h1 class="bottom_line">Posts tagged with "{{ page.tag }}"</h1>
       {% assign posts = site.tags[page.tag] %}
-      {% include post-listing.html %}
       {% include post-listing.html %}
       <div class="clear"></div>
    </div>

@@ -7,7 +7,8 @@ description: Blog Category
 
 <section class="container clearfix">
    <div class="content clearfix">
-      <h1>Posts in blog category "<a href="/tags/{{ page.category }}">{{ page.category }}</a>"</h1>
+      <div class="clear padding10 clearfix"></div>
+      <h1 class="bottom_line">Posts in blog category "{{ page.category }}"</h1>
       {% assign posts = site.categories[page.category] %}
       {% assign no_category = true %}
       {% include post-listing.html %}

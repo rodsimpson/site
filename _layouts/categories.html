@@ -7,7 +7,8 @@ description: Blog Categories
 
 <section class="container clearfix">
    <div class="content clearfix">
-      <h1>Blog categories</h1>
+      <div class="clear padding10 clearfix"></div>
+      <h1 class="bottom_line">Blog categories</h1>
       {% for category in page.categories %}
          {% if category != 'blog' %}
             <h2><a class="blog_sidebar_header" href="/categories/{{ category | slugize }}">{{ category }}</a></h2>

@@ -13,7 +13,9 @@
       <div class="category">Categories:
          {% if post.categories: %}
             {% for category in post.categories: %}
+               {% if category != 'blog' %}
                <a href="/categories/{{ category | slugize }}">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
+               {% endif %}
             {% endfor %}
          {% endif %}
       </div>
@@ -27,26 +29,22 @@
    </div>
 
    <div class="blog_post_content">
-      <table>
-         <tr>
-            <td>
-               {% if post.image %}
-               <a href="{{ post.url }}"><img class="blog_post_image" src="{{ post.image }}" alt="{{ post.title }}" /></a>
-               {% endif %}
-            </td>
-            <td class="blog_post_body">
-               <p>
-                  {% if post.summary %}
-                  {{ post.summary | strip_html | truncatewords: 60 }}
-                  {% else %}
-                  {{ post.content | strip_html | truncatewords: 60 }}
-                  {% endif %}
-                  <br/>
-                  <a class="read_more" href="{{ post.url }}" class="button white">>> read more</a>
-               </p>
-            </td>
-         </tr>
-      </table>
+      <div class="blog_columns_2">
+         {% if post.image %}
+            <a href="{{ post.url }}"><img class="blog_post_image_full" src="{{ post.image }}" alt="{{ post.title }}" /></a>
+         {% endif %}
+      </div>
+      <div class="blog_columns_2 last">
+         <p>
+            {% if post.summary %}
+            {{ post.summary | strip_html | truncatewords: 60 }}
+            {% else %}
+            {{ post.content | strip_html | truncatewords: 60 }}
+            {% endif %}
+            <br/>
+            <a class="read_more" href="{{ post.url }}" class="button white">>> read more</a>
+         </p>
+      </div>
    </div>
 </div>
 <div class="clear padding40"></div>
