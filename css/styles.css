@@ -16,7 +16,7 @@ em, dfn, i {
 body {
 	color:#222;
 	-webkit-font-smoothing: antialiased;
-	backgorund:#f6f4e7;
+	background:white;
 }
 a:link, a:visited, a:hover, a:active, a:focus {
 	text-decoration:none;
@@ -357,9 +357,6 @@ ol, ol li {
 	visibility:hidden;
 	width:0
 }
-* html .clearfix, :first-child+html .clearfix {
-	zoom:1
-}
 /* ================= Pagination ================= */
 .pagination {
 	margin:10px auto 20px auto;
@@ -573,6 +570,9 @@ ol, ol li {
 }
 .page_list li{
    margin: 0 0 10px -19px;
+}
+.clean-list li {
+	margin-top: 5px;
 }
 
 /* ======================================================================================================
