@@ -308,7 +308,7 @@ ol, ol li {
 }
 .home_page_colums_body{
    padding: 10px;
-   min-height: 240px;
+   min-height: 130px;
    border: 1px solid #efefef;
 }
 /* ================= Sidebar ================= */
@@ -381,7 +381,7 @@ ol, ol li {
 }
 /* ================= Gallery ================= */
 .gallery_image_container{
-   float: left; 
+   float: left;
    width: 225px;
    margin: 0 13px 10px 0;
 }
@@ -420,7 +420,7 @@ ol, ol li {
 }
 
 /* ================= Blog ================= */
-.blog_post{ 
+.blog_post{
    margin-top: 10px;
 }
 .pre_next_post{
@@ -631,6 +631,7 @@ ol, ol li {
    .container {
       width: 752px;
    }
+   .homepage-image{ display: none; }
 }
 /* ================= Mobile (Portrait) < 767px ================= */
 @media only screen and (max-width: 767px) {
@@ -714,6 +715,7 @@ ol, ol li {
    .container {
       width: 300px;
    }
+   .large-only{display: none;}
 }
 /* ================= Mobile (Landscape) 480px - 767px ================= */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -765,6 +767,7 @@ ol, ol li {
    .container {
       width: 420px;
    }
+   .large-only{display: none;}
 }
 
 /* ================= Mobile (Portrait) < 320px ================= */
@@ -849,6 +852,7 @@ ol, ol li {
    .container {
       width: 300px;
    }
+   .large-only{display: none;}
 }
 
 .typekit-badge {display:none !important;}
