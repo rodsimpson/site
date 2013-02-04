@@ -469,14 +469,15 @@ ol, ol li {
 	color:#999999;
 	height:14px;
 	display:inline-block;
-	margin:0 -22px 1px 0;
+	margin:0 5px 1px 0;
 }
 .blog_header .tweet {
 	font-size:11px;
 	line-height:11px;
 	height:13px;
 	display:inline-block;
-	margin:0 -24px 1px 30px;
+	margin:0 5px 1px 0px;
+	width: 80px;
 }
 .blog_header .author {
 	padding:4px 0 0 18px;

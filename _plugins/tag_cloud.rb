@@ -79,7 +79,7 @@ module Jekyll
         name, weight = tag
         size = size_min + ((size_max - size_min) * weight).to_f
         size = sprintf("%.#{@precision}f", size)
-        link = name.gsub(' ', '-')
+        link = name.gsub(' ', '-').downcase
         html << "<a style='color: #222; font-size: #{size}#{unit}' href='/tags/#{link}'>#{name}</a>\n"
       end
     end
