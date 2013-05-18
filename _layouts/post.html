@@ -34,7 +34,11 @@ layout: default
             <div class="category">Categories:
                {% if page.categories: %}
                   {% for category in page.categories: %}
-                     <a href="/categories/{{ category | slugize }}">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
+                     {% if category != 'pages' %}
+                        {% if category != 'blog' %}
+                          <a href="/categories/{{ category | slugize }}">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
+                        {% endif %}
+                     {% endif %}
                   {% endfor %}
                {% endif %}
             </div>

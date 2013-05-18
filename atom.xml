@@ -5,7 +5,7 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <link rel="hub" href="https://pubsubhubbub.appspot.com"/>
- 
+
   <title>rodsimpson.com</title>
   <link href="http://rodsimpson.com/"/>
   <link type="application/atom+xml" rel="self" href="http://rodsimpson.com/atom.xml"/>

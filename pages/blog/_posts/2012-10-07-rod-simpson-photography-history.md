@@ -1,5 +1,6 @@
 ---
 layout: post
+headline: It's digital, snap all you want!
 title: How photography became a serious part of my life
 keywords: Rod Simpson, photography, trips, photos, tips, how-tos, galleries, gallery
 description: Rod Simpson - how photography has become part of my life
@@ -8,7 +9,8 @@ image: https://lh4.googleusercontent.com/--5TqapmueQ8/UHI68ExVoiI/AAAAAAAAAjY/SF
 cats:
   - Photography
 tags:
-  - Rod Simpson
+  - Photography
+  - Artist
 ---
 
 ##How photography became a serious part of my life

@@ -1,0 +1,12 @@
+{% for post in site.posts limit:1 %}
+  <div class="homepage_columns_header clearfix home-page-top-column-header">
+   <span style="font-size: 11px">{{ post.date | date: '%B' }} {{ post.date | date: '%e' }}, {{ post.date | date: '%Y' }}</span>
+   <h1><a href="{{ post.url }}">{{ post.headline }}</a></h1>
+   <h4>{{ post.title }}</h4>
+  </div>
+  <div class="home_page_colums_body home-page-top-column-box">
+   <img src="{{ post.image }}">
+   <p>{{ post.description }}</p>
+  </div>
+{% endfor %}
+

@@ -1,22 +1,22 @@
 ---
 layout: post
+headline: Writing is fun!
 title: Old Books, NaNoWriMo, and Writing for Apigee
+description: Rod Simpson - Old Books, NaNoWriMo, and Writing for Apigee
 keywords: Rod Simpson, writing, Apigee, books, novel, NaNoWriMo, National Novel Writing Month
-description: Rod Simpson - Old Books, NaNoWriMo, and Writing for Apigee 
 date: 2012-10-08 17:00:00 -06:00
 image: https://lh5.googleusercontent.com/-bJCC8E_vVA0/UHJJ6ZjB3DI/AAAAAAAAAf4/YE5FGKd2ZOo/s640/untitled.jpg
 cats:
   - Writing
 tags:
-  - Rod Simpson
   - NaNoWriMo
 ---
 
 ##A discovery
-I was recently visiting my mother's house, and while cleaning out some old boxes, I came across several "books" that I made as a tyke. These weren't exactly [Pulitzer](http://www.pulitzer.org/) candidates, and with such pedestrian titles as "The Bean Man", about a man who collected beans, and "The Spaceship Man", about a man who lives on a spaceship, I am not sure why I even made them.  Ok, I do know.  They were really fun to make; especially with no editorial review!  
+I was recently visiting my mother's house, and while cleaning out some old boxes, I came across several "books" that I made as a tyke. These weren't exactly [Pulitzer](http://www.pulitzer.org/) candidates, and with such pedestrian titles as "The Bean Man", about a man who collected beans, and "The Spaceship Man", about a man who lives on a spaceship, I am not sure why I even made them.  Ok, I do know.  They were really fun to make; especially with no editorial review!
 
-##What was most important was the experience.  
-There is nothing better than spending hours on end pounding away at the keyboard only to realize that everything you wrote is terrible and should be deleted immediately.  How satisfying, right?  Well, I must love it because in 2009, I participated for the first time in the National Novel Writing Month ([NaNoWriMo](http://www.nanowrimo.org/)).  
+##What was most important was the experience.
+There is nothing better than spending hours on end pounding away at the keyboard only to realize that everything you wrote is terrible and should be deleted immediately.  How satisfying, right?  Well, I must love it because in 2009, I participated for the first time in the National Novel Writing Month ([NaNoWriMo](http://www.nanowrimo.org/)).
 
 Some of you may wonder what this ([NaNoWriMo](http://www.nanowrimo.org/)) business is.  I will tell you.  It is hell.  A fun sort of hell, with lots of snacks, high highs (how awesome - the princess is really a stock-car driver), and low lows(wait! the princess can't drive stick).  For a solid month (every November), about half a million crazy people lock themselves in basements and set up camp in coffee shops while they foolishly attempt to write 50,000 (not a type-o, that is Fifty-Thousand) words in just 30 days.  They could have at least picked a month with 31 days!
 
