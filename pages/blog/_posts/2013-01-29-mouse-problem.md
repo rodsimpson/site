@@ -6,6 +6,7 @@ description: My wireless Mac mouse occasionally would seem to hang and would bec
 keywords: Rod Simpson, apple, mac, wireless, mouse, choppy, hangs, problem, solution
 date: 2013-01-29 2:00:00 -06:00
 image: https://lh3.googleusercontent.com/-QI_nz1PXcU4/USj9bgE0uMI/AAAAAAAAAm8/D8Uo3iqDS5Q/s800/photo.JPG
+credit: Mouse, <a href="http://rodsimpson.com">Rod Simpson</a> copyright 2013
 cats:
   - Tech Stuff
 tags:

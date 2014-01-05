@@ -56,6 +56,11 @@ layout: default
             <a href="{{ page.image }}"><img class="blog_post_image_full" src="{{ page.image }}" alt="{{ page.title }}" /></a>
             {% endif %}
 
+            {% if page.credit %}
+            Image credit: {{ page.credit }}
+            {% endif %}
+            <br/><br/>
+
             <!-- post text -->
             <div class="blog_post_body">
             {{ content }}

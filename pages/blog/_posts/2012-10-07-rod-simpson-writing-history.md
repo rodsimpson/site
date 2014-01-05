@@ -6,6 +6,7 @@ description: Rod Simpson - Old Books, NaNoWriMo, and Writing for Apigee
 keywords: Rod Simpson, writing, Apigee, books, novel, NaNoWriMo, National Novel Writing Month
 date: 2012-10-08 17:00:00 -06:00
 image: https://lh5.googleusercontent.com/-bJCC8E_vVA0/UHJJ6ZjB3DI/AAAAAAAAAf4/YE5FGKd2ZOo/s640/untitled.jpg
+credit: Desert Mesa, <a href="http://rodsimpson.com">Rod Simpson</a> copyright 2012
 cats:
   - Writing
 tags:
@@ -28,11 +29,12 @@ I did this.  Twice.  The first time, in 2009 as previously mentioned, I only mad
 Actually it wasn't that bad.  I really had a great time and my wife, Mary, was very supportive.  After a month of struggle, I felt that I had a nice foundation for a novel.  I have been revising it since then and hope to have it finished by sometime in mid 2085 or so (give or take 20 years).
 
 ##My day job
-I also currently enjoy the great fortune of working for [Apigee](http://apigee.com), an awesome company that has encouraged me to create articles for their website.  Most of these discuss the projects that I work on and are fairly technical.  I also get to contribute to the documentation of the product.  I actually really enjoy this and have been mentored by some really great technical writers (there are lots of really smart people working at [Apigee](http://apigee.com).
+
+I also currently enjoy the great fortune of working for [Apigee](http://apigee.com), an awesome company that has encouraged me to create articles for their website.  Most of these discuss the projects that I work on and are fairly technical.  I also get to contribute to the documentation of the product.  I actually really enjoy this and have been mentored by some really great technical writers (there are lots of really smart people working at [Apigee](http://apigee.com).
 
 ##Keep writing
 What I have learned is that you just have to keep writing.  Just like [photography](/2012/10/07/rod-simpson-photography-history/), you will never get the amazing picture if you don't keep going out and taking photos.  Of course, they also say that about the lottery...
 
 
 
-
+

@@ -5,6 +5,7 @@ keywords: Rod Simpson, photography, trips, photos, tips, how-tos, galleries, gal
 description: Trip Report - Spring in the smoky mounains
 date: 2010-8-1 12:00:00 -06:00
 image: https://lh5.googleusercontent.com/-SpzfKO_-93Q/UHCPOE0glkI/AAAAAAAAAZw/A20h48vT4IY/s640/20100427-IMG_7828.jpg
+credit: Smoky Mountain Lane, <a href="http://rodsimpson.com">Rod Simpson</a> copyright 2010
 cats:
   - Photography
   - Trip Reports

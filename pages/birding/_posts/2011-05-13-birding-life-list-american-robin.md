@@ -17,7 +17,7 @@ tags:
 * **Common Name:** American Robin
 * **Scientific Name:** Turdus migratorius
 * **Date Sighted:** 2011-04-22
-* **Location of sighting:** Longmont, Colorado
+* **Location of sighting:** Ridgeway, Colorado
 * **Notes:** This crew of Robins was enjoying in the snow on the grounds outside our house in Longmont, Colorado.  It was a late spring snow, so many flowers were in full bloom. How great to have blooming flowers, snow, and Robins too!
 
 

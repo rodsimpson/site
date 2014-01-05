@@ -1,7 +1,7 @@
 <div class="pages">
    {% if paginator.previous_page %}
       {% if paginator.previous_page == 1 %}
-      <a class="prev" href="/blog"></a>
+      <a class="prev" href="/pages/blog"></a>
       {% else %}
       <a class="prev" href="/blog/page{{paginator.previous_page}}"></a>
       {% endif %}
@@ -11,13 +11,13 @@
    {% for count in (1..paginator.total_pages) %}
       {% if count == paginator.page %}
          {% if count == 1 %}
-            <a class="selected" href="/blog">1</a>
+            <a class="selected" href="/pages/blog">1</a>
          {% else %}
             <a class="selected" href="/blog/page{{count}}">{{count}}</a>
          {% endif %}
       {% else %}
          {% if count == 1 %}
-            <a href="/blog">1</a>
+            <a href="/pages/blog">1</a>
          {% else %}
             <a href="/blog/page{{count}}">{{count}}</a>
          {% endif %}

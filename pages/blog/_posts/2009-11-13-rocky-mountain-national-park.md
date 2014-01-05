@@ -5,6 +5,7 @@ keywords: Rod Simpson, photography, trips, photos, tips, how-tos, galleries, gal
 description: Trip Report - Rocky Mountain National Park
 date: 2009-11-13 18:00:00 -06:00
 image: https://lh3.googleusercontent.com/-ix_B6Kxqom4/UGyiqcupMpI/AAAAAAAAAPc/cycJhEl2erM/s640/untitled-2.jpg
+credit: Silly Elk, <a href="http://rodsimpson.com">Rod Simpson</a> copyright 2009
 cats:
   - Photography
   - Trip Reports

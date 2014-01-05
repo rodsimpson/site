@@ -10,7 +10,9 @@
          {% if post.categories: %}
             {% for category in post.categories: %}
                {% if category != 'blog' %}
-               <a href="/categories/{{ category | slugize }}">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
+                  {% if category != 'pages' %}
+                  <a href="/categories/{{ category | slugize }}">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
+                  {% endif %}
                {% endif %}
             {% endfor %}
          {% endif %}

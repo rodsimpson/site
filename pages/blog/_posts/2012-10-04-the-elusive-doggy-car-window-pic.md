@@ -5,6 +5,7 @@ keywords: Rod Simpson, photography, dogs, car window, pictures, photos
 description: The elusive doggy car window pic
 date: 2009-10-12 13:35:00 -06:00
 image: https://lh3.googleusercontent.com/-YV4ep-B-Po0/UHC-NTVxEGI/AAAAAAAAAec/rkKrsIscD9o/s800/untitled.jpg
+credit: Rio, <a href="http://rodsimpson.com">Rod Simpson</a> copyright 2012
 cats:
   - Photography
 tags:

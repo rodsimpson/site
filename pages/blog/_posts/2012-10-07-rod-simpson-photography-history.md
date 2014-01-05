@@ -6,6 +6,7 @@ keywords: Rod Simpson, photography, trips, photos, tips, how-tos, galleries, gal
 description: Rod Simpson - how photography has become part of my life
 date: 2012-10-07 17:00:00 -06:00
 image: https://lh4.googleusercontent.com/--5TqapmueQ8/UHI68ExVoiI/AAAAAAAAAjY/SFPc8dPAezA/s640/untitled.jpg
+credit: Telluride Shed, <a href="http://rodsimpson.com">Rod Simpson</a> copyright 2012
 cats:
   - Photography
 tags:
@@ -20,7 +21,7 @@ But if I wasn’t doing art, I was busy practicing my other artistic passion –
 
 After several amazing years in Savannah, I transferred to the University of Florida.  In 1996, I graduated with a Bachelor of Fine Arts with a major in painting.  I was fortunate enough to have as a friend and mentor, [Jerry Cutler](http://plaza.ufl.edu/jcutler/index.html), who taught me to see.  My other mentor was [Richard Hiepp](http://www.richardheipp.com/), who is awesome.  He taught me how to think.
 
-Since that time I have been involved in art in various capacities, but it wasn’t until 2008 that I was re-introduced to photography.  We moved to Crested Butte, Colorado and my wife Mary was busy photographing all the amazing scenery.  I was inspired to pick up the camera once again and haven’t looked back since.
+Since that time I have been involved in art in various capacities, but it wasn’t until 2008 that I was re-introduced to photography. My wife Mary was busy photographing all the amazing scenery.  I was inspired to pick up the camera once again and haven’t looked back since.
 
 Much had changed since my days in the darkroom with black and white film.  But I eagerly read everything I could and practiced as much as possible.  Photography swept into my life like a cool breeze on a summer afternoon; it has been a wonderful experience.  Mary and I always spend as much time as possible out in nature, taking photos and loving life.  I hope you enjoy viewing these photos as much as I have enjoyed taking them.
 

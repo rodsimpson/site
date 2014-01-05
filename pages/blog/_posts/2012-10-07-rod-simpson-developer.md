@@ -6,8 +6,9 @@ keywords: Rod Simpson, developer, PHP, C++, Java, Javascript
 description: Rod Simpson weighs in on how he got started in computer science.
 date: 2012-10-09 19:20:00 -06:00
 image: https://lh3.googleusercontent.com/-a2DTzrZ91JY/UHRa_A5G4JI/AAAAAAAAAgw/dSiXSakxsVo/s640/untitled.jpg
+credit: Milky Way, <a href="http://rodsimpson.com">Rod Simpson</a> copyright 2012
 cats:
-  - Development
+  - Software
 tags:
   - Programming
   - Apigee

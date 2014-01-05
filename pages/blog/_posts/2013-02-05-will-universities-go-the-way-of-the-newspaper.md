@@ -6,6 +6,7 @@ description: Will the advent of the digital classroom mean that universities and
 keywords: Rod Simpson, education, digital, college, universities, online courses, extinct, newspapers
 date: 2013-02-05 2:00:00 -06:00
 image: https://lh3.googleusercontent.com/-Dg6-vpiRJnE/USkEMHa1TYI/AAAAAAAAApA/Ls0nfKqrX5Q/s800/freeimage-6117668.jpg
+credit: School, <a href="http://www.stockfreeimages.com/">http://www.stockfreeimages.com/</a>
 cats:
   - Tech Stuff
   - Education
@@ -93,4 +94,4 @@ There is no question that we are in the midst of a very significant shift in edu
 
 The real question seems to be: will all this hubbub actually result in better education? Only time will tell.
 
-**Image credit: [http://www.stockfreeimages.com/](http://www.stockfreeimages.com/)
+**Image credit: [http://www.stockfreeimages.com/](http://www.stockfreeimages.com/)**
