@@ -1,32 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="64414de7-d958-41da-bbac-c6512b0fc900" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/blog-staging/2013-02-23-5-pressing-questions-i-want-answered.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/blog-staging/food that blows your mind.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/developer/RoderickSimpson_resume.pdf" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/blog/_posts/2009-10-31-snow-dog.md" afterPath="$PROJECT_DIR$/pages/blog/_posts/2009-10-31-snow-dog.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/blog/_posts/2009-11-13-rocky-mountain-national-park.md" afterPath="$PROJECT_DIR$/pages/blog/_posts/2009-11-13-rocky-mountain-national-park.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/blog/_posts/2010-8-01-spring-in-the-smoky-mountains.md" afterPath="$PROJECT_DIR$/pages/blog/_posts/2010-8-01-spring-in-the-smoky-mountains.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/birding/2011-04-22-birding-life-list-template.md" afterPath="$PROJECT_DIR$/pages/birding/2011-04-22-birding-life-list-template.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/birding/_posts/2011-05-13-birding-life-list-american-robin.md" afterPath="$PROJECT_DIR$/pages/birding/_posts/2011-05-13-birding-life-list-american-robin.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/blog/_posts/2012-10-04-the-elusive-doggy-car-window-pic.md" afterPath="$PROJECT_DIR$/pages/blog/_posts/2012-10-04-the-elusive-doggy-car-window-pic.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/blog/_posts/2012-10-06-create-a-toy-effect-with-phtoshop.md" afterPath="$PROJECT_DIR$/pages/blog/_posts/2012-10-06-create-a-toy-effect-with-phtoshop.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/blog/_posts/2012-10-07-rod-simpson-developer.md" afterPath="$PROJECT_DIR$/pages/blog/_posts/2012-10-07-rod-simpson-developer.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/blog/_posts/2012-10-07-rod-simpson-photography-history.md" afterPath="$PROJECT_DIR$/pages/blog/_posts/2012-10-07-rod-simpson-photography-history.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/blog/_posts/2012-10-07-rod-simpson-writing-history.md" afterPath="$PROJECT_DIR$/pages/blog/_posts/2012-10-07-rod-simpson-writing-history.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/blog/_posts/2013-01-29-mouse-problem.md" afterPath="$PROJECT_DIR$/pages/blog/_posts/2013-01-29-mouse-problem.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/blog/_posts/2013-02-05-will-universities-go-the-way-of-the-newspaper.md" afterPath="$PROJECT_DIR$/pages/blog/_posts/2013-02-05-will-universities-go-the-way-of-the-newspaper.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_plugins/generate_category_pages.rb" afterPath="$PROJECT_DIR$/_plugins/generate_category_pages.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/personal/me.html" afterPath="$PROJECT_DIR$/pages/personal/me.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/paginator.html" afterPath="$PROJECT_DIR$/_includes/paginator.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_includes/post-listing.html" afterPath="$PROJECT_DIR$/_includes/post-listing.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_layouts/post.html" afterPath="$PROJECT_DIR$/_layouts/post.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sitemap.xml" afterPath="$PROJECT_DIR$/sitemap.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="64414de7-d958-41da-bbac-c6512b0fc900" name="Default" comment="" />
     <ignored path="site.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
